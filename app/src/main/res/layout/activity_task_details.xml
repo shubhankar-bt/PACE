@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskDetailsActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/layout_group_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="5dp"
+        android:elevation="3dp"
+        android:background="@drawable/gradient_bac_2"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Customer Name"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/customerNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerName"
+                    android:clickable="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="9977445566"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/moreOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_icon"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentEnd="true"/>
+
+
+                <ImageView
+                    android:id="@+id/whatsApp"
+                    android:layout_width="22dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="3dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_whatsapp_svgrepo_com"
+                    android:layout_below="@+id/customerName"
+                    android:layout_toEndOf="@+id/customerNumber"/>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toStartOf="@+id/dues"
+                    android:text="Total Dues:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/dues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="5000"
+                    android:textColor="@color/red_inactive" />
+
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="No. of tasks"
+                    android:textColor="@color/grey_active_light" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/txt"
+                    android:text="5"
+                    android:textColor="@color/white" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_group_chat"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/noDataText"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@color/grey_active"
+        android:layout_height="wrap_content"
+        android:text="No data found"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/add_icon"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!-- Floating action button for add alarm -->
+    <!-- Make sure that you are constraining this
+         button to the parent button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_alarm_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add_fab"
+        android:layout_above="@+id/add_fab"
+        android:layout_alignEnd="@+id/add_fab"
+        android:layout_marginBottom="24dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_baseline_add_task_24" />
+
+    <!-- Action name text for the add alarm button -->
+    <!-- Make sure that you are constraining this Text to
+         the add Alarm FAB button -->
+    <TextView
+        android:id="@+id/add_alarm_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Add Task"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/add_alarm_fab"
+        android:layout_toStartOf="@+id/add_alarm_fab"
+        android:layout_alignTop="@+id/add_alarm_fab" />
+
+    <!-- Floating action button for add person -->
+    <!-- Make sure that you are constraining this
+         button to the add Alarm FAB button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_person_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:fabSize="normal"
+        android:layout_above="@+id/add_alarm_fab"
+        android:layout_alignEnd="@+id/add_alarm_fab"
+        android:layout_alignStart="@+id/add_alarm_fab"
+        app:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
+    <!-- Action name text for the add person button -->
+    <!-- Make sure that you are constraining this Text
+         to the add Person FAB button -->
+    <TextView
+        android:id="@+id/add_person_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/add_person_fab"
+        android:layout_alignBottom="@+id/add_person_fab"
+        android:layout_toStartOf="@+id/add_person_fab"
+        android:text="Add Money" />
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bac_3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:baselineAligned="false"
+        android:background="@drawable/grad_bac_3"
+        android:paddingVertical="10dp"
+        android:text="@string/update_this_order"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grad_bac_3"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/namestrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/namestrt"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="ABCDEFG VSGCVS"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/current_weighttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Total Price" />
+
+            <TextView
+                android:id="@+id/current_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/current_weighttxt"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="5000"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/height"
+                android:layout_alignStart="@+id/height"
+                android:layout_alignEnd="@+id/height"
+                android:text="* Enter price in Indian Currency"
+                android:textColor="@color/red_inactive"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/goal_weighttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailLout"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Order ID" />
+
+
+            <TextView
+                android:id="@+id/goal_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailLout"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/goal_weighttxt"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Order ID"
+                android:textAlignment="center" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailLout"
+                android:layout_below="@+id/current_weighttxt"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/agetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:padding="10dp"
+                    android:text="Details" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/agetxt"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:padding="10dp"
+                    android:text="Order Name"
+                    android:textAlignment="center" />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/Phonetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal_weighttxt"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Phone" />
+
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal_weighttxt"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/Phonetxt"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Phone"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/addresstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Phonetxt"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Phonetxt"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/addresstxt"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Date"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/assignedTotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresstxt"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="Assigned to" />
+
+            <EditText
+                android:id="@+id/assignedTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresstxt"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/assignedTotxt"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:text="Akash Agarwal"
+                android:textAlignment="center"
+                android:textColor="#818181" />
+
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/assignedTotxt"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="payment Recieved"
+                android:inputType="number" />
+
+
+            <CheckBox
+                android:id="@+id/conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/green_active"
+                android:buttonTint="@color/orange_active"
+                android:text="check this if full payment done" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conditions"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Cancel"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_okay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Update"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</LinearLayout>

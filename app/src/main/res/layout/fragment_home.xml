@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_background_1">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:letterSpacing="2"
+            android:text="PACE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="PROJECT AND CONTENT EXPERTS"
+            android:textColor="@color/grey_active_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TASKS"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:typeface="sans"
+        android:textColor="@color/grey_active_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/topTXT"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/topBar"
+        android:elevation="8dp"
+        android:layout_height="50dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="2dp"
+            app:tabIconTintMode="add"
+            android:elevation="5dp"
+            app:tabIndicatorColor="@color/dark_mode_green"
+            app:tabRippleColor="@null"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabSelectedTextColor="@color/dark_mode_green"
+            app:tabTextColor="@color/grey_active"
+            app:tabTextAppearance="@style/TabLayout"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:layout_below="@+id/v">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/contacts_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+
+    <!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/lottiProgress"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:padding="4dp"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        android:visibility="gone"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@raw/googleloop" />-->
+
+</RelativeLayout>

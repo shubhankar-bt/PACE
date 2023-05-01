@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TabLayout" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="defaultViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="headerTextStyle" parent="defaultViewStyle">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#6194EB</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+
+    <style name="spinnerStyle" parent="defaultViewStyle">
+        <item name="smsp_errorTextColor">@color/error_color</item>
+        <item name="smsp_floatingLabelColor">@color/floating_color</item>
+        <item name="smsp_underlineColor">@color/underline_color</item>
+        <item name="smsp_errorTextSize">13sp</item>
+        <item name="smsp_itemSize">14sp</item>
+        <item name="smsp_hintSize">14sp</item>
+    </style>
+
+
+
+
+
+</resources>

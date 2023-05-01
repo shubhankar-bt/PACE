@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:elevation="8dp"
+    android:paddingVertical="20dp"
+    android:background="@color/white"
+    android:paddingHorizontal="35dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_money"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:elevation="3dp"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:helperText="* Required"
+        app:endIconMode="clear_text"
+        app:endIconCheckable="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:helperTextTextColor="@color/orange_active"
+        app:helperTextEnabled="true"
+        android:layout_marginTop="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_input1"
+            android:layout_width="match_parent"
+            android:hint="Payment sent by client"
+            android:inputType="phone"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:helperTextTextColor="@color/orange_active"
+        app:endIconMode="clear_text"
+        app:endIconCheckable="true"
+        app:helperTextEnabled="true"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_input2"
+            android:layout_width="match_parent"
+            android:hint="Amount received in bank"
+            android:inputType="phone"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Back"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_cancel"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_mode_green"
+            android:text="Add"
+            android:textColor="#818181"
+            android:elevation="8dp"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_okay"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="30dp"
+        android:background="@drawable/background_border_empty"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:text="Money added : ">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addedAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="30dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/t1"
+            android:text="1000 ">
+
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/dialog"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/red_inactive"
+            android:progressBackgroundTintMode="add"
+            android:outlineProvider="paddedBounds"
+            android:progressBackgroundTint="@color/red_inactive"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/addedAmount" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

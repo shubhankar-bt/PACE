@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="1dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/above"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey_active"
+                android:textStyle="normal"
+                android:text="Order ID"/>
+
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:text="0000jfbehfbefbscdvdcdcdcdecv00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/r1"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:textColor="@color/grey_active"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:text="Order Name"/>
+
+            <TextView
+                android:id="@+id/orderName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt2"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:text="0000jfbehfbefb00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey_active"
+                android:textStyle="normal"
+                android:text="Total Price"/>
+
+            <TextView
+                android:id="@+id/TotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="5000"
+                android:layout_below="@+id/txt3"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/above"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due : "
+            android:textColor="@color/grey_active"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Dues"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/txt4"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_below="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dotted"
+        android:layerType="software" />
+
+
+</RelativeLayout>

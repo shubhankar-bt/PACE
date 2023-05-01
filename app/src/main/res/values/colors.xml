@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#0099ff</color>
+    <color name="colorPrimaryDark">#0099ff</color>
+    <color name="colorAccent">#ff5500</color>
+    <color name="drawerColor">#0062A3</color>
+    <color name="GreenColorfav">#3CB371</color>
+    <color name="ToolbarColor">#f5f5f5</color>
+    <color name="sign_in_color">#00cba9</color>
+    <color name="blue_sky">#1dacd6</color>
+    <color name="newColor">#1E88E5</color>
+
+
+
+
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="grey">#242B2E</color>
+    <color name="color1">#5DA3FA</color>
+    <color name="color2">#02B290</color>
+    <color name="color3">#F4CE6A</color>
+    <color name="color4">#FF6666</color>
+    <color name="color5">#E07C24</color>
+
+
+
+    <color name="dark_mode_green">#2F3C48</color>
+    <color name="red_active">#f44336</color>
+    <color name="blue_active">#03a9f4</color>
+    <color name="green_active">#4caf50</color>
+    <color name="blue_grey_active">#607d8b</color>
+    <color name="orange_active">#ff9800</color>
+    <color name="grey_active">#9e9e9e</color>
+    <color name="grey_active_back">#a8a8a8</color>
+    <color name="grey_active_light">#BAB8B8</color>
+    <color name="grey_active_dark">#817D7D</color>
+    <color name="blackColor">#000000</color>
+    <color name="darkGray">#525050</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="red_inactive">#e57373</color>
+    <color name="green_inactive">#81c784</color>
+    <color name="blue_grey_inactive">#90a4ae</color>
+    <color name="yellow_inactive">#fff176</color>
+    <color name="gery_inactive">#FAF7F7</color>
+    <color name="progress_color">#DF4CAF50</color>
+    <color name="cardBack">#e0e0e0</color>
+    <color name="light_grey">#4de0e0e0</color>
+    <color name="blue_bg_light">#e3f2fd</color>
+    <color name="green_bg_light">#e8f5e9</color>
+    <color name="orange_bg_light">#fff3e0</color>
+    <color name="grey_bg_light">#fafafa</color>
+    <color name="accent_color">#c0d2b4</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="lightblue">#95D0CD</color>
+    <color name="button">#DF8343</color>
+    <color name="orange_light">#fdad5c</color>
+
+
+    <color name="dots">#aaaaaa</color>
+    <color name="terms">#9bc3ba</color>
+    <color name="green_olive2">#afc29f</color>
+
+
+    <color name="greyNew">#E9EAEE</color>
+    <color name="yellow">#F8BA0F</color>
+    <color name="goodgrey">#535353</color>
+    <color name="blue">#293859</color>
+    <color name="lightgrey">#EEEEEE</color>
+
+
+    <!--    Day mode colors-->
+
+    <color name="backgroundColor">#FCFCFC</color>
+    <color name="textColor1">#000000</color>
+    <color name="textColor2">#FFF</color>
+
+
+    <color name="base_color">#d46a6a</color>
+    <color name="hint_color">#d46a6a</color>
+    <color name="floating_color">#009688</color>
+    <color name="underline_color">#4851504e</color>
+
+    <color name="custom_item_color">#2196F3</color>
+    <color name="custom_item_list_color">#3F51B5</color>
+    <color name="custom_selected_item_color">#E91E63</color>
+    <color name="error_color">#9C27B0</color>
+
+    <color name="search_hint_color">#F00051</color>
+    <color name="search_text_color">#8300D6</color>
+
+
+
+
+</resources>

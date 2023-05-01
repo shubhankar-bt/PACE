@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:elevation="8dp"
+    android:paddingVertical="20dp"
+    android:background="@drawable/white_bac"
+    android:paddingHorizontal="35dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_money"
+        android:textSize="22sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txt_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Payment sent"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txt_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Amount received"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_cancel"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Add"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_okay"/>
+    </LinearLayout>
+</LinearLayout>

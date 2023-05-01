@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Adapter.ReceiptActivity">
+
+    <TextView
+        android:id="@+id/receiptTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_active_light"
+        android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/e_receipt"/>
+
+
+    <com.example.loadinganimation.LoadingAnimation
+        android:id="@+id/loadingAnim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:barType="@drawable/black_round_and_round"
+        app:boldText="false"
+        app:text="Preparing your receipt"
+        app:enlarge="5"
+        app:isVisible="true"
+        app:textColor="@color/purple_500"
+        app:textSize="5sp" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/receiptTxt"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/layoutView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_reciept"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/grey_active_dark"
+                android:text="Name njb"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey_active_dark"
+                android:layout_marginTop="5dp"
+                android:text="990933388" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height=".05dp"
+                android:layout_below="@+id/number"
+                android:layout_alignStart="@+id/number"
+                android:layout_alignEnd="@+id/number"
+                android:background="@color/grey_active" />
+
+
+            <TextView
+                android:id="@+id/currentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:text="" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number"
+                android:layout_marginTop="20dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerReceipt"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Total   "
+                android:textColor="@color/blue_grey_inactive"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/overallTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerReceipt"
+                android:layout_marginTop="28dp"
+                android:layout_toEndOf="@+id/txt2"
+                android:text="2000"
+                android:textColor="@color/grey_active_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerReceipt"
+                android:layout_marginTop="30dp"
+                android:text="Dues   "
+                android:layout_toStartOf="@+id/overallDues"
+                android:textColor="@color/orange_active"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/overallDues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerReceipt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="28dp"
+                android:text="2000"
+                android:textColor="@color/grey_active_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:text="Signed By"
+                android:textColor="@color/grey_active"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:text="Akash Agarwal"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txt"
+                android:layout_alignParentStart="true"
+                android:letterSpacing="1"
+                android:text="PACE"
+                android:textColor="@color/grey_active_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_design_1"
+        android:padding="10dp"
+        android:text="Share to WhatsApp"
+        android:textColor="@color/grey_bg_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</RelativeLayout>

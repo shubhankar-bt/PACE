@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "115710606205",
+    "project_id": "pace-a21e2",
+    "storage_bucket": "pace-a21e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115710606205:android:be9d3a9d2da111a462aa14",
+        "android_client_info": {
+          "package_name": "com.newproject.pace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115710606205-novb6kt1f64rflq1f7phoptft6dr1o4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLwa23xcYvRBQTIiLYh7c1okfW3n7YrRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115710606205-novb6kt1f64rflq1f7phoptft6dr1o4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
